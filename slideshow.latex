@@ -1,0 +1,33 @@
+\newtoks\webinartitle
+\newtoks\presenter
+\newtoks\email
+\newtoks\jobtitle
+\documentclass{beamer}
+\usetheme{Singapore}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{vhistory}
+
+
+%______________________________________________________________________________%
+\webinartitle{presentation}
+\presenter{My Name}
+\email{email@email.com}
+\jobtitle{my title}
+%______________________________________________________________________________%
+
+
+%______________________________________________________________________________%
+\title{\the\webinartitle}
+\author{\the\presenter\\\the\jobtitle\\\the\email}
+\begin{document}
+\begin{frame}
+\begin{figure}
+\centering
+  \includegraphics[width=2cm]{./images/avatar-logo.png}
+\end{figure}
+\maketitle 
+\end{frame}
+\end{document}
+
